@@ -1,0 +1,7 @@
+#!/usr/bin/env jruby
+
+require_relative '../lib/scorched_earth'
+
+game = ScorchedEarth::Game.new 800, 600
+
+ScorchedEarth::GameWindow.new(game.width, game.height, game).run
